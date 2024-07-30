@@ -1,4 +1,6 @@
+rust-projects/guessing_game/target
 target
 target/
 Cargo.toml
 Cargo.lock
+.gitignore
