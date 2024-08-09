@@ -18,7 +18,13 @@ fn main() {
 
 }
 
+const PI : f64 = 3.1415;
+
 fn string_size(s: &str) -> usize {
     let s = s.len();
     s
+}
+
+fn sum (x:i32, y:i32) -> i32 {
+    x + y
 }
