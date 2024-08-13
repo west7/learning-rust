@@ -1,6 +1,13 @@
-fn main() {
-    unsafe {
-        let p: *const i32 = std::ptr::null();
-        println!("{}", *p); // Desreferenciamento de ponteiro nulo
-    }
+#![allow(unused)]
+struct Account {
+    balance: i32,
+    limit: i32,
 }
+
+#[derive(Debug)]
+struct Unit();
+
+fn main() {
+    let mut account = Account { limit: 5000, balance: 10000};
+}
+
