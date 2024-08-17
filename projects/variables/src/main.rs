@@ -1,3 +1,11 @@
+#![allow(unused)]
+
+enum IpAddrKind {
+    V4(String),
+    V6(String),
+}
+
+
 fn main() {
     println!("O tamanho da string é: {}", string_size("Guilherme"));
 
@@ -15,6 +23,10 @@ fn main() {
     let mut a = [0; 10];
     a[3] = 1;
     println!("Array: {:?}", a);
+
+    let home: IpAddrKind = IpAddrKind::V4(String::from("127.0.0.1"));
+    let loopback: IpAddrKind = IpAddrKind::V6(String::from("::1"));
+
 
 }
 
